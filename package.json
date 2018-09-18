@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node ./node_modules/standard/bin/cmd.js",
+    "test": "export NODE_ENV=test && npm run lint && ./node_modules/mocha/bin/mocha ./test/index.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSH-code/Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KSH-code/Server/issues"
+  },
+  "homepage": "https://github.com/KSH-code/Server#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "async-request": "^1.2.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-asyncify": "^1.0.0",
+    "mongoose": "^5.2.15"
+  }
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "/",
+    "method": "GET",
+    "handlers": ["index.js"]
+  }
+]
