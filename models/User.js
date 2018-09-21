@@ -11,8 +11,17 @@ const userSchema = new mongoose.Schema({
   startDate: Date,
   endDate: Date,
   age: Number,
-  gender: String,
-  job: String,
-  visitedPlace: Array
+  gender: {
+    type: String,
+    default: ''
+  },
+  job: {
+    type: String,
+    default: ''
+  },
+  visitedPlace: {
+    type: Array,
+    default: []
+  }
 })
 module.exports = mongoose.model('User', userSchema)

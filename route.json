@@ -3,5 +3,10 @@
     "path": "/",
     "method": "GET",
     "handlers": ["index.js"]
+  },
+  {
+    "path": "/",
+    "method": "POST",
+    "handlers": ["createUser.js"]
   }
 ]
